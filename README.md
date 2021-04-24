@@ -19,20 +19,18 @@ Request: `GET /user/drpawel`
 Response:
 ```JSON
 {
-  Username: "drpawel",
-  Total stars: 1,
-  Repositories: [
-    {
-      repo_name: "Code-Sharing-Platform",
-      stars_count: 0
-    },
-  .
-  .
-  .
-    {
-      repo_name: "Watermark",
-      stars_count: 0
-    }
-   ]
+    "username": "drpawel",
+    "total_stars": 1,
+    "repositories": [
+        {
+            "repo_name": "Code-Sharing-Platform",
+            "stars_count": 0
+        },
+        ...
+        {
+            "repo_name": "Watermark",
+            "stars_count": 0
+        }
+    ]
 }
 ```
