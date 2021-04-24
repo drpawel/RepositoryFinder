@@ -16,12 +16,12 @@ public class AppService {
 
     public Map<String, Object> getRepositories(String username){
         Map<String, Object> repositories = new LinkedHashMap<>();
-        repositories.put("Username",username);
+        repositories.put("username",username);
         List<Repo> reposFromAPI = getFromExternalAPI(username);
         if (reposFromAPI != null) {
-            repositories.put("Total stars",reposFromAPI.stream().map(Repo::getStars_count).reduce(0,Integer::sum));
+            repositories.put("total_stars",reposFromAPI.stream().map(Repo::getStars_count).reduce(0,Integer::sum));
         }
-        repositories.put("Repositories",reposFromAPI);
+        repositories.put("repositories",reposFromAPI);
         return repositories;
     }
 
