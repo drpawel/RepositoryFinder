@@ -2,13 +2,17 @@
 ***
 This project is part of Allegro Summer e-Xperience recruitment process.
 
-The aim of the task:
+### The aim of the task:
 Create software allowing for:
-  -list all repositories (names and number of stars)
-  -return total number of stars from all repositories
- from any GitHub account.
+  - list all repositories (names and number of stars)
+  - return total number of stars from all repositories
+  
+from any existing GitHub account.
  
  Data should be returned by HTTP protocol.
+ 
+### Instalation
+To run whole app you need to clone this project to your Intellij IDEA from GitHub link. Then wait for gradle to build and just run app. App is available on `http://localhost:8889/`. You can get there by your browser (JSONView add-on recommended) or external application e.g. Postman.
 
 ### Examples
 
