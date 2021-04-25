@@ -4,8 +4,8 @@ package com.example.repositoryfinder.model;
  * Entity representing repository
  */
 public class Repo {
-    private String repo_name;
-    private int stars_count;
+    private final String repo_name;
+    private final int stars_count;
 
     /**
      * Constructor of Repo

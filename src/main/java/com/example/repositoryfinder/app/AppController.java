@@ -25,7 +25,7 @@ public class AppController {
      * @param username github username
      * @return list of repositories
      */
-    @GetMapping(path = "/user/{username}", produces = "application/json")
+    @GetMapping(path = "/api/user/{username}", produces = "application/json")
     public Map<String, Object> message(@PathVariable String username){
         return appService.getRepositories(username);
     }
