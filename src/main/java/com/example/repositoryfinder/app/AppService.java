@@ -9,11 +9,17 @@ import org.springframework.web.client.RestTemplate;
 import java.util.*;
 import java.util.stream.Collectors;
 
+/**
+ * AppService
+ */
 @Service
 public class AppService {
     public AppService() {
     }
 
+    /**
+     * Get list of repositories function
+     */
     public Map<String, Object> getRepositories(String username){
         Map<String, Object> repositories = new LinkedHashMap<>();
         repositories.put("username",username);
@@ -25,6 +31,11 @@ public class AppService {
         return repositories;
     }
 
+    /**
+     * Get repositories from external GitHub API
+     * @param username github repositories
+     * @return list of repositories
+     */
     private List<Repo> getFromExternalAPI(String username){
         RestTemplate restTemplate = new RestTemplate();
         try{
