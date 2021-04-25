@@ -14,7 +14,7 @@ Create software allowing for:
 
 ###### Example
 
-Request: `GET /user/drpawel`
+Request: `GET /api/user/drpawel`
 
 Response:
 ```JSON
