@@ -12,7 +12,7 @@ Create software allowing for:
 
 ### Examples
 
-###### Example
+###### Get repositories for user 'drpawel'
 
 Request: `GET /api/user/drpawel`
 
@@ -32,5 +32,15 @@ Response:
             "stars_count": 0
         }
     ]
+}
+```
+###### Get repositories for user that don't exist
+
+Request: `GET /api/user/userthatdontevenexist`
+
+Response:
+```JSON
+{
+    "message": "user not found"
 }
 ```
